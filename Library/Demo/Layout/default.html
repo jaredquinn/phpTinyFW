@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+<title><?= $this->title ?></title>
+<?= $this->htmlContentType() ?>
+<?= $this->htmlMetaData() ?>
+<?= $this->htmlStyleSheets() ?>
+<?= $this->htmlScripts() ?>
+</head>
+<body>
+
+<div id="nav">
+	<div>
+		Jared Quinn's <a href="/">Examples and Demos</a> :: <a href="/demo/index/zip">Download Full Source</a>
+		<span style="float: right; margin-right: 20px;">
+			<a href="/demo/map">Earthquakes</a> :: 
+			<a href="/demo/people">People DB</a> :: 
+			<a href="/demo/facebook/slideshow">FB Slideshow</a> ::
+			<a href="/demo/facebook/friends">FB Friends</a>
+		</span>
+	</div>
+</div>
+
+<?= $this->getContent() ?>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-595993-2");
+	pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>

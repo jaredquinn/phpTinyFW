@@ -1,0 +1,60 @@
+<div id="content">
+
+<div class="page-header">
+
+  <button id="btn-add-person">Add Person</button>
+  <button id="btn-refresh">Refresh</button>
+  <button id="btn-reset-db">Reset Database</button>
+
+  <div id="people-count">
+
+  </div>
+</div>
+
+<div id="people-list">
+
+</div>
+
+<div id="people-help">
+  <h4>Help</h4>
+  <ul><li>Click "Add Person" to add a new record</li>
+      <li>Click a person's name to edit a record</li>
+      <li>Click the trashcan to delete a record</li>
+      <li>Mouse-over a person to view their description</li>
+  </ul>
+
+</div>
+
+<div id="dlg-add-record">
+	<form id="person-record" action="/demo/people/edit" method="post">
+	<fieldset>
+		<input type="hidden" name="id" id="form-id" />
+
+		<label for="form-name">Name:</label>
+		<input type="text" name="name" id="form-name" />
+
+		<br/>
+
+		<label for="form-description">Description:</label>
+		<textarea name="description" id="form-description" rows="5" cols="40"></textarea>
+	</fieldset>
+	<p>
+	<button id="form-save" name="save">Save</button>
+	</p>
+	</form>
+</div>
+
+<div id="dlg-reset" title="Are you sure?">
+    <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 0 0;"></span> This will clear all database records, are you sure?
+</div>
+  
+<div id="dlg-confirm" title="Are you sure?">
+    <form action="#" method="post">
+	<p>
+  	<span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 0 0;"></span> Are you sure you want to delete "<span id="confirm-description"></span>"
+  	<input type="hidden" name="id" id="confirm-record-id" />
+	</p>
+    </form>
+</div>
+
+</div>  

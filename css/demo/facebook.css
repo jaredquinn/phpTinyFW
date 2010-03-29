@@ -1,0 +1,43 @@
+
+body {
+	color: white;
+	background: #333;
+}
+
+.header {
+	display: block;
+	text-align: middle;
+	font-size: 80%;
+	color: #ccc;
+	height: 40px;
+}
+
+.header h1 {
+	font-size: 150%;
+	margin-bottom: 0;
+}
+
+#albums {
+	float: right;
+}
+
+#photo {
+	border: 1px solid #111;
+}
+
+.image {
+	margin: 20px auto;
+	width: 90%;
+	text-align: center;
+}
+
+#caption {
+	font-size: 120;
+	color: #ccc;
+	margin 50px auto;
+}
+
+.profile_pic {
+	margin: 0; padding: 0; border: 0; width: 50px; height: 50px; display: block; float: left;
+}
+

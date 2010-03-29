@@ -1,0 +1,48 @@
+
+* {
+	font-family: "Verdana", "Arial", sans-serif;
+}
+
+body	{
+	font-size: 80%;
+	margin: 0;
+	padding: 0;
+
+}
+
+#nav {
+	height: 30px;
+	font-family: "Verdana", "Arial", sans-serif;
+	font-size: 80%;
+	border: 0;
+	border-bottom: 2px solid #666;
+	width: 100%;
+	margin: 0; padding: 0;
+	top: 0; left; 0;
+	background: #ddd;
+	color: #333;
+}
+
+#nav * {
+	background: transparent;
+}
+
+#nav div {
+	padding: 5px 5px;
+}
+
+#nav a,
+#nav a:visited {
+	color: #cc0000;
+}
+
+a,
+a:visited {
+	color: #cc0000;
+}
+
+
+#content {
+	margin: 5px;
+}
+

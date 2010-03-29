@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+<title><?= $this->title ?></title>
+<?= $this->htmlContentType() ?>
+<?= $this->htmlMetaData() ?>
+<link href="http://jaredquinn.info/static/ext-3.1.1/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+<link href="http://jaredquinn.info/static/ext-3.1.1/examples/ux/css/RowEditor.css" rel="stylesheet" type="text/css" />
+<?= $this->htmlStyleSheets() ?>
+<script type="text/javascript" src="http://jaredquinn.info/static/ext-3.1.1/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="http://jaredquinn.info/static/ext-3.1.1/ext-all.js"></script>
+<script type="text/javascript" src="http://jaredquinn.info/static/ext-3.1.1/examples/ux/RowEditor.js"></script>
+<?= $this->htmlScripts() ?>
+</head>
+<body>
+
+<div id="nav">
+
+</div>
+
+<?= $this->getContent() ?>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-595993-2");
+	pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>
