@@ -1,4 +1,5 @@
-<?
+<?php
+
 /* TinyFramework
    (C) 2010 Jared Quinn
    All Rights Reserved

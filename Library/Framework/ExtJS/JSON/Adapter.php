@@ -1,4 +1,5 @@
-<?
+<?php
+
 class Framework_ExtJS_JSON_Adapter {
 
 	protected $root;

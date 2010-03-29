@@ -13,9 +13,12 @@
 */
 require_once '../db-config.php';
 
-define(APP_BASE, dirname(__FILE__));
+define('APP_BASE', dirname(__FILE__));
 
-require_once(APP_BASE . '/Library/Framework.php');
+set_include_path(APP_BASE . '/Library' . PATH_SEPARATOR . get_include_path());
+
+require_once "Framework.php";
+
 spl_autoload_register(array('Framework', 'autoload'));
 
 $db = Framework_DB::getInstance();
